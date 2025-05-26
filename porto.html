@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahmanda Pradikja Pangestu | Game Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-slate-900/90 backdrop-blur-sm z-50 border-b border-slate-800">
+        <div class="container mx-auto max-w-6xl">
+            <div class="flex justify-between items-center py-4">
+            <div class="text-2xl font-bold text-white">
+                <span class="text-blue-500">R</span>ahmanda<span class="text-blue-500">.</span>
+            </div>
+                <div class="hidden md:flex space-x-6">
+                <a href="#home" class="nav-link text-gray-300 hover:text-white active">Home</a>
+                <a href="#about" class="nav-link text-gray-300 hover:text-white">About</a>
+                <a href="#projects" class="nav-link text-gray-300 hover:text-white">Projects</a>
+                <a href="#skills" class="nav-link text-gray-300 hover:text-white">Skills</a>
+                <a href="#contact" class="nav-link text-gray-300 hover:text-white">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800">
+            <div class="container mx-auto px-8 max-w-6xl py-2 flex flex-col space-y-3">
+                <a href="#home" class="text-gray-300 hover:text-white py-2">Home</a>
+                <a href="#about" class="text-gray-300 hover:text-white py-2">About</a>
+                <a href="#projects" class="text-gray-300 hover:text-white py-2">Projects</a>
+                <a href="#skills" class="text-gray-300 hover:text-white py-2">Skills</a>
+                <a href="#contact" class="text-gray-300 hover:text-white py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-16 bg-gradient-to-b from-slate-900 to-slate-800">
+        <div class="container mx-auto max-w-6xl px-8 py-16">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-12">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+                    Hi, I'm <span class="text-blue-500">Rahmanda</span>
+                    <br>
+                        <span class="text-3xl md:text-4xl lg:text-5xl">Software Engineer</span>
+                </h1>
+                    <p class="text-gray-400 mt-6 text-lg md:text-xl">
+                        Crafting seamless software solutions with a passion for clean code, efficient systems, and user-centric design.
+                </p>
+                <div class="mt-8 flex flex-wrap gap-4">
+                    <a href="#projects" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-all duration-300 shadow-lg hover:shadow-blue-500/50">
+                        View Projects
+                    </a>
+                    <a href="assets/Black And White Corporate Resume .pdf" download="Rahmanda_CV.pdf" class="px-6 py-3 bg-transparent hover:bg-slate-700 text-blue-400 border border-blue-500 font-medium rounded-lg transition-all duration-300">
+                            Download CV
+                    </a>
+                </div>
+                <div class="mt-10 flex space-x-6">
+                    <a href="https://github.com/RAHMAND4" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/rahmanda-pradikja-399806319/" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="https://p1psquack.itch.io/" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">
+                        <i class="fab fa-itch-io text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80">
+                    <div class="absolute inset-0 rounded-full bg-blue-500 opacity-20 blur-xl animate-pulse"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <svg class="w-full h-full" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#3B82F6" d="M40,-51.2C51.9,-41.8,61.8,-29.6,65.7,-15.3C69.6,-1,67.5,15.4,59.9,28.1C52.3,40.8,39.2,49.8,24.9,55.2C10.7,60.7,-4.7,62.5,-19.2,58.8C-33.7,55.1,-47.3,45.8,-56.1,32.8C-64.9,19.8,-68.9,3.1,-65.5,-11.7C-62.1,-26.5,-51.3,-39.5,-38.7,-48.7C-26.1,-57.9,-13.1,-63.3,0.6,-64C14.2,-64.7,28.1,-60.6,40,-51.2Z" transform="translate(100 100)"></path>
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg class="w-3/4 h-3/4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">About Me</h2>
+                <div class="w-24 h-1 bg-blue-500 mx-auto mt-4"></div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <div class="relative w-full max-w-md mx-auto">
+                        <div class="absolute -inset-2 bg-blue-500 opacity-20 blur-xl rounded-lg"></div>
+                        <div class="relative bg-slate-700 p-6 rounded-lg shadow-xl">
+                            <svg class="w-12 h-12 text-blue-500 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <p class="text-gray-300 italic">"I believe games are the perfect medium to blend art, technology, and storytelling. My mission is to create experiences that resonate with players on an emotional level while pushing the boundaries of what's possible in interactive entertainment."</p>
+                            <p class="mt-4 text-blue-400 font-medium">- Rahmanda Pradikja Pangestu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-10 max-w-2xl mx-auto px-4">
+                    <p class="text-gray-300 mb-6">
+                        I'm a passionate developer with 2+ years of experience in game development and software engineering.
+                    </p>
+                    <p class="text-gray-300 mb-6">
+                        With a strong foundation in Unity and Unreal Engine, I've built everything from mobile games to AR experiences, focusing on gameplay systems, AI, and procedural content.
+                    </p>
+                    <p class="text-gray-300">
+                        clean, efficient software and exploring new tech to solve real-world problems.
+                    </p>
+                    <div class="mt-8 grid grid-cols-2 gap-4 max-w-3xl mx-auto">
+                        <div class="bg-slate-700 p-4 rounded-lg">
+                            <div class="text-blue-500 font-bold text-xl">2+</div>
+                            <div class="text-gray-400">Years Experience</div>
+                        </div>
+                        <div class="bg-slate-700 p-4 rounded-lg">
+                            <div class="text-blue-500 font-bold text-xl">5</div>
+                            <div class="text-gray-400">Projects Completed</div>
+                        </div>
+                        <div class="bg-slate-700 p-4 rounded-lg">
+                            <div class="text-blue-500 font-bold text-xl">10+</div>
+                            <div class="text-gray-400">certificate</div>
+                        </div>
+                        <div class="bg-slate-700 p-4 rounded-lg">
+                            <div class="text-blue-500 font-bold text-xl">3</div>
+                            <div class="text-gray-400">Industry Awards</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-slate-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Featured Projects</h2>
+                <div class="w-24 h-1 bg-blue-500 mx-auto mt-4"></div>
+                <p class="text-gray-400 mt-6 max-w-2xl mx-auto">
+                    A selection of my most significant game development projects, showcasing various genres and technologies.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-8">
+                <!-- Project 1 -->
+                <div class="game-card bg-slate-800 rounded-xl overflow-hidden shadow-lg">
+                    <div class="h-48 bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center">
+                        <img src="assets/Screenshot 2025-05-13 161200.png" alt="Kisah Rasa" class=" h-40 object-cover rounded-lg shadow-lg">                        </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Kisah Rasa</h3>
+                        <p class="text-gray-400 mb-4">
+                            This game was co-created with a team on a Capstone project with a mix of candy crush and plants vs zombies mechanics.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs rounded-full">Unity</span>
+                            <span class="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs rounded-full">C#</span>
+                            <span class="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs rounded-full">json</span>
+                            <span class="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs rounded-full">GitHub</span>
+                        </div>
+                        <button class="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors duration-300" onclick="showProjectDetails('cosmic-odyssey')">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="game-card bg-slate-800 rounded-xl overflow-hidden shadow-lg">
+                    <div class="h-48 bg-gradient-to-br from-green-600 to-teal-600 flex items-center justify-center">
+                        <img src="assets/Screenshot 2025-05-13 134330.png" alt="Fushu" class="object-cover rounded-lg shadow-lg w-full h-40 max-w-xs">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">FUSHU Maarif</h3>
+                        <p class="text-gray-400 mb-4">
+                            The FUSHU Maarif website was created to present faculty information and academic services in a structured manner.                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs rounded-full">Wordpress</span>
+                            <span class="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs rounded-full">PHP</span>
+                            <span class="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs rounded-full">MySQL</span>
+                            <span class="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs rounded-full">GitHub</span>
+                        </div>
+                        <button class="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors duration-300" onclick="showProjectDetails('verdant-realm')">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="game-card bg-slate-800 rounded-xl overflow-hidden shadow-lg">
+                    <div class="h-48 bg-gradient-to-br from-red-600 to-orange-500 flex items-center justify-center">
+                        <img src="assets/Screenshot 2025-05-13 170919.png" alt="BOP" class="object-cover rounded-lg shadow-lg w-full h-40 max-w-xs">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Battle of Pong</h3>
+                        <p class="text-gray-400 mb-4">
+                            Pong game designed for 2 or 1 players with fairly simple game mechanics available on desktop, play now                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs rounded-full">Unity</span>
+                            <span class="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs rounded-full">C#</span>
+                            <span class="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs rounded-full">Json</span>
+                        </div>
+                        <button class="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors duration-300" onclick="showProjectDetails('neon-shadows')">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Project 4 Placeholder -->
+                <div class="game-card bg-slate-800 rounded-xl overflow-hidden shadow-lg">
+                    <div class="h-48 bg-gradient-to-br from-yellow-600 to-green-300 flex items-center justify-center">
+                        <img src="assets/Screenshot 2025-05-22 205355.png" alt="FTIK MA'ARIF" class="object-cover rounded-lg shadow-lg w-full h-40 max-w-xs">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">FTIK MA'ARIF</h3>
+                        <p class="text-gray-400 mb-4">
+                            FTIK MA'ARIF official website that presents faculty information, services, and campus news.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs rounded-full">Wordpress</span>
+                            <span class="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs rounded-full">PHP</span>
+                            <span class="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs rounded-full">MySQL</span>
+                            <span class="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs rounded-full">GitHub</span>
+                        </div>
+                        <button class="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors duration-300" onclick="showProjectDetails('FTIK-Maarif')">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Project 5 Placeholder -->
+                <div class="game-card bg-slate-800 rounded-xl overflow-hidden shadow-lg">
+                    <div class="h-48 bg-gradient-to-br from-purple-600 to-red-300 flex items-center justify-center">
+                        <img src="assets/Screenshot 2025-05-13 161812.png" alt="Mini Squid Game" class="object-cover rounded-lg shadow-lg w-full h-40 max-w-xs">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Mini Squid Game</h3>
+                        <p class="text-gray-400 mb-4">
+                            Built with the Mini Squid Game team, this mobile game features simple mechanics with progressively increasing difficulty.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs rounded-full">Unity</span>
+                            <span class="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs rounded-full">C#</span>
+                            <span class="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs rounded-full">Json</span>
+                        </div>
+                        <button class="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors duration-300" onclick="showProjectDetails('Mini-Squid-Game')">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Project 6 Placeholder -->
+                <div class="game-card bg-slate-800 rounded-xl overflow-hidden shadow-lg">
+                    <div class="h-48 bg-gradient-to-br from-blue-600 to-green-300 flex items-center justify-center">
+                        <img src="assets/Screenshot 2025-05-13 175252.png" alt="Mini Squid Game" class="object-cover rounded-lg shadow-lg w-full h-40 max-w-xs">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">L type</h3>
+                        <p class="text-gray-400 mb-4">
+                            This app helps determine a person's learning type through a short test, so that users can understand how to learn most effectively for themselves.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs rounded-full">Laravel</span>
+                            <span class="px-3 py-1 bg-blue-900/50 text-blue-300 text-xs rounded-full">Bootstrap</span>
+                        </div>
+                        <button class="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors duration-300 " onclick="showProjectDetails('L-type')">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="#" class="inline-flex items-center px-6 py-3 bg-slate-700 hover:bg-slate-600 text-white rounded-lg transition-colors duration-300">
+                    View All Projects
+                    <svg class="w-5 h-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-slate-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Skills &amp; Expertise</h2>
+                <div class="w-24 h-1 bg-blue-500 mx-auto mt-4"></div>
+                <p class="text-gray-400 mt-6 max-w-2xl mx-auto">
+                    My technical toolkit and areas of expertise in Software development.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                
+                <!-- Programming -->
+                <div class="bg-slate-700 p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Programming</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <div class="skill-pill px-4 py-2 bg-blue-900/40 text-blue-300 rounded-full flex items-center">
+                            <span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>
+                            C#
+                        </div>
+                        <div class="skill-pill px-4 py-2 bg-blue-900/40 text-blue-300 rounded-full flex items-center">
+                            <span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>
+                            PHP
+                        </div>
+                        <div class="skill-pill px-4 py-2 bg-blue-900/40 text-blue-300 rounded-full flex items-center">
+                            <span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>
+                            MySQL
+                        </div>
+                        <div class="skill-pill px-4 py-2 bg-blue-900/40 text-blue-300 rounded-full flex items-center">
+                            <span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>
+                            LUA
+                        </div>
+                        <div class="skill-pill px-4 py-2 bg-blue-900/40 text-blue-300 rounded-full flex items-center">
+                            <span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>
+                            Python
+                        </div>
+                        <div class="skill-pill px-4 py-2 bg-blue-900/40 text-blue-300 rounded-full flex items-center">
+                            <span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>
+                            JavaScript
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools & Workflow -->
+                <div class="bg-slate-700 p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Tools &amp; Framework</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <div class="skill-pill px-4 py-2 bg-blue-900/40 text-blue-300 rounded-full flex items-center">
+                            <span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>
+                            Git
+                        </div>
+                        <div class="skill-pill px-4 py-2 bg-blue-900/40 text-blue-300 rounded-full flex items-center">
+                            <span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>
+                            Laravel
+                        </div>
+                        <div class="skill-pill px-4 py-2 bg-blue-900/40 text-blue-300 rounded-full flex items-center">
+                            <span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>
+                            CodeIgniter
+                        </div>
+                        <div class="skill-pill px-4 py-2 bg-blue-900/40 text-blue-300 rounded-full flex items-center">
+                            <span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>
+                            Unity
+                        </div>
+                        <div class="skill-pill px-4 py-2 bg-blue-900/40 text-blue-300 rounded-full flex items-center">
+                            <span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>
+                            Wordpress
+                        </div>
+                        <div class="skill-pill px-4 py-2 bg-blue-900/40 text-blue-300 rounded-full flex items-center">
+                            <span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>
+                            Json
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Experience Bar -->
+            <div class="mt-16">
+                <h3 class="text-xl font-bold text-white mb-6">Experience Level</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-400">Programming</span>
+                            <span class="text-blue-400">75%</span>
+                        </div>
+                        <div class="w-full bg-slate-600 rounded-full h-2.5">
+                            <div class="bg-blue-500 h-2.5 rounded-full experience-bar-75"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-400">AI Prompt</span>
+                            <span class="text-blue-400">85%</span>
+                        </div>
+                        <div class="w-full bg-slate-600 rounded-full h-2.5">
+                            <div class="bg-blue-500 h-2.5 rounded-full experience-bar-85"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-400">Problem solving programming</span>
+                            <span class="text-blue-400">85%</span>
+                        </div>
+                        <div class="w-full bg-slate-600 rounded-full h-2.5">
+                            <div class="bg-blue-500 h-2.5 rounded-full experience-bar-85"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-400">TeamWork</span>
+                            <span class="text-blue-400">90%</span>
+                        </div>
+                        <div class="w-full bg-slate-600 rounded-full h-2.5">
+                            <div class="bg-blue-500 h-2.5 rounded-full experience-bar-90"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Get In Touch</h2>
+                <div class="w-24 h-1 bg-blue-500 mx-auto mt-4"></div>
+                <p class="text-gray-400 mt-6 max-w-2xl mx-auto">
+                    Interested in collaborating or have a project in mind? I'd love to hear from you!
+                </p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-10">
+                <div class="md:w-1/2">
+                    <form class="bg-slate-800 p-8 rounded-xl shadow-lg">
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-400 mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-400 mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-6">
+                            <label for="subject" class="block text-gray-400 mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-400 mb-2">Message</label>
+                            <textarea id="message" rows="5" class="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-all duration-300 shadow-lg hover:shadow-blue-500/50">
+                                Send Message
+                            </button>
+                        </div>
+                        <div class="mt-4 text-center text-sm text-gray-500">
+                            This is a demo contact form
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-slate-800 p-8 rounded-xl shadow-lg h-full">
+                        <h3 class="text-xl font-bold text-white mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-gray-300 font-medium">Email</h4>
+                                    <a href="mailto:rahmanda@example.com" class="text-blue-400 hover:text-blue-300">rahmanda08366@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-gray-300 font-medium">Location</h4>
+                                    <p class="text-gray-400">Jambi City, Indonesia</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-gray-300 font-medium">Availability</h4>
+                                    <p class="text-gray-400">Open to freelance &amp; full-time opportunities</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-10">
+                            <h4 class="text-gray-300 font-medium mb-4">Connect With Me</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://github.com/RAHMAND4" class="w-10 h-10 bg-slate-700 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors duration-300">
+                                    <i class="fab fa-github text-white"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/rahmanda-pradikja-399806319/" class="w-10 h-10 bg-slate-700 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors duration-300">
+                                    <i class="fab fa-linkedin-in text-white"></i>
+                                </a>
+                                <a href="https://p1psquack.itch.io/" class="w-10 h-10 bg-slate-700 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors duration-300">
+                                    <i class="fab fa-itch-io text-white"></i>
+                                </a>
+                                <a href="https://discord.com/users/jamaludin0844" class="w-10 h-10 bg-slate-700 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors duration-300">
+                                    <i class="fab fa-discord text-white"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="text-2xl font-bold text-white">
+                        <span class="text-blue-500">R</span>ahmanda<span class="text-blue-500">.</span>
+                    </div>
+                </div>
+                <div class="text-gray-400 text-sm">
+                    © 2025 Rahmanda Pradikja Pangestu. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="fixed inset-0 bg-black/80 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-slate-800 rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6 border-b border-slate-700 flex justify-between items-center">
+                <h3 id="modal-title" class="text-2xl font-bold text-white">Project Details</h3>
+                <button onclick="closeProjectModal()" class="text-gray-400 hover:text-white">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="p-6">
+                <div id="modal-content">
+                    <!-- Content will be dynamically inserted here -->
+                </div>
+            </div>
+            <div class="p-6 border-t border-slate-700 flex justify-end">
+                <button onclick="closeProjectModal()" class="px-4 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
